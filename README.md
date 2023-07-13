@@ -20,7 +20,7 @@ If you like the oath, pledge by following these steps:
 3. Push & create a PR
 ```git push```
 
-[The oath](AIEthicOath.md)
+[The oath](https://github.com/virginiemarelli/AI-ethic-oath/blob/main/AIEthicOath.md)
 
 I appreciate your interest in updating the Hippocratic oath to address the advancements and 
 ethical considerations of our time. I encourage you to share your suggestions for revisions, 
