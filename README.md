@@ -13,14 +13,12 @@ Additionally, John Nosta and his AI-pocratic Oath have provided further inspirat
 
 If you like the oath, pledge by following these steps: 
 
-1. Fork & clone the repo 
-```git clone https://github.com/virginiemarelli/AI-ethic-oath.git```
-2. Add an empty commit 
+1. Fork & clone the repo
+3. Add an empty commit 
 ```git commit --allow-empty -m "I pledge"```
-3. Push & create a PR
-```git push```
+4. Push & create a PR
 
-[The oath](https://github.com/virginiemarelli/AI-ethic-oath/blob/main/AIEthicOath.md)
+[The oath](AIEthicOath.md)
 
 I appreciate your interest in updating the Hippocratic oath to address the advancements and 
 ethical considerations of our time. I encourage you to share your suggestions for revisions, 
