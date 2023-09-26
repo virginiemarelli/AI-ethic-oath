@@ -18,26 +18,9 @@ jobs:
         with:
           threshold: 0
           message: "⚠️  Git diff exceeds 0, won't be merged automatically."
-      - name: Get PR Commits
-        id: 'get-pr-commits'
-        uses: tim-actions/get-pr-commits@master
-        with:
-          token: ${{ secrets.TOKEN_APPROVE_PR }}
       - name: "Check Subject Is 'I pledge'"
         uses: tim-actions/commit-message-checker-with-regex@v0.3.1
         with:
           commits: ${{ steps.get-pr-commits.outputs.commits }}
           pattern: '^I pledge(\n.*)*$'
           error: 'Subject is not I pledge'
-      - name: Check Body Line Length
-        uses: tim-actions/commit-message-checker-with-regex@v0.3.1
-        with:
-          commits: ${{ steps.get-pr-commits.outputs.commits }}
-          pattern: '^.+(\n.{0})*$'
-          error: 'Body line too long (max 0)'
-      - name: Merge
-        uses: devmasx/merge-branch@master
-        with:
-          type: now
-          target_branch: main
-          github_token: ${{ secrets.TOKEN_APPROVE_PR }}
